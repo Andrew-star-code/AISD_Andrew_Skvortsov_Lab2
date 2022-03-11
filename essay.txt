@@ -1,0 +1,1 @@
+As you can see from the example, in Python it is also possible to access by a negative index, while counting from the end of the string.
