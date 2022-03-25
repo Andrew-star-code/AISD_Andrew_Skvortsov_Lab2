@@ -27,10 +27,10 @@ try:
                         print(j, end = " ")
                 engl_flag = False
                 work_buffer = ""
-            buffer = file.read(buffer_len)     # читаем очередной блок
-            if len(work_buffer) >= max_buffer_len and buffer.find(".") < 0 and buffer.find("!") < 0 and buffer.find("?") < 0:    
+            buffer = file.read(buffer_len)
+            if len(work_buffer) >= max_buffer_len and buffer.find(".") < 0 and buffer.find("!") < 0 and buffer.find("?") < 0:
                 print ("\nФайл text.txt не содержит знаков окончания предложения и максимальный размер буфера превышен.\nОткорректируйте файл text.txt в директории или переименуйте существующий *.txt файл.")
-               
+                break               
         if len(work_buffer) > 0:
                 print ("\nХвост файла text.txt не содержит знаков окончания предложения \nОткорректируйте файл text.txt в директории или переименуйте существующий *.txt файл.")
                 
