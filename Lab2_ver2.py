@@ -1,5 +1,4 @@
 import os
-import re
 max_buffer_len = 100    
 buffer_len = 1         
 
